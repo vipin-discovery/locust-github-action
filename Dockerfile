@@ -7,4 +7,3 @@ COPY entrypoint.sh /entrypoint.sh
 
 ENTRYPOINT ["/entrypoint.sh"]
 
-chmod +x entrypoint.sh
