@@ -43,8 +43,8 @@ class MyReqRes(SequentialTaskSet):
                                data=payload1,
                                headers=headers
                                )
-        log = self.getlogger()
-        log.info("Message: getVideoLiveStream " + str(res.status_code))
+        
+        print('GetVideoLiveStream: ',res.status_code) 
 
     @task
     def getVideoLiveStreamBackOffice(self):
@@ -52,8 +52,8 @@ class MyReqRes(SequentialTaskSet):
                                data=payload2,
                                headers=headers
                                )
-        log = self.getlogger()
-        log.info("Message: getVideoLiveStreamBackOffice " + str(res.status_code))
+        
+        print('GetVideoLiveStreamBackOffice: ',res.status_code)
 
 
 class LiveStream(HttpUser):
