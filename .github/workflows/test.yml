@@ -12,7 +12,7 @@ jobs:
         uses: vipin-discovery/locust-github-action@main
         with:
           LOCUSTFILE: "locustfile.py"
-          URL:  "https://gqa-pass.user.dev.rt.discoveryplus.com/login?flow=login"
+          URL:  "https://prod.playback.h264.io"
           USERS: "6"
           RATE: "6"
           RUNTIME: "10s"
